@@ -24,4 +24,8 @@ class Stack :
             return "stack is empty"
         else:
             return self.top.data
-
+    def traverse(self):
+        temp = self.top
+        while(temp != None):
+            print(temp.data, end = "")
+            temp=temp.next
